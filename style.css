@@ -1,6 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    scroll-behavior: smooth;
 }
 
 /* Fonts */
@@ -11,7 +14,7 @@ body {
     font-size: 96px;
 }
 
-.secondary {
+h2 {
     margin-top: var(--padding-size);
     margin-bottom: 0;
     font-family: "Raleway", sans-serif;
@@ -20,7 +23,6 @@ body {
     color: var(--H2-text);
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .tertiary {
@@ -28,6 +30,8 @@ body {
     font-size: 56px;
     font-weight: bold;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .dish-info {
@@ -35,7 +39,9 @@ body {
     font-size: 32px;
     font-weight: bold;
     color: var(--dish-price-text);
-    margin: 8px;
+        display: flex;
+    justify-content: space-between;
+    width: 180%;
 }
 
 .normal {
@@ -55,7 +61,7 @@ body {
 
 /*head*/
 
-.navbar {
+nav {
     height: 112px;
     text-decoration: none;
     display: flex;
@@ -66,12 +72,18 @@ body {
 .nav-menu {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .menu {
     color: white;
     text-decoration: none;
     margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+.menu:hover {
+    filter: drop-shadow(5px 6px 2px var(--dish-price-text));
 }
 
 .flower {
@@ -90,6 +102,11 @@ body {
     background-color: var(--H2-text);
 }
 
+.tel:hover {
+    background-color: #9f0808ab;
+}
+
+
 .tel-img {
     height: 30px;
     width: 30px;
@@ -100,6 +117,7 @@ body {
     color: white;
     text-decoration: none;
 }
+
 
 .head {
     /*img*/
@@ -118,9 +136,6 @@ body {
     margin-bottom: 0px;
 }
 
-.headline-town {
-    margin-top: 0px;
-}
 
 .headline {
     display: flex;
@@ -137,15 +152,12 @@ body {
     justify-content: center;
 }
 
-.options {
-    margin-bottom: var(--padding-size);
-}
-
 .options-box {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 64px;
+    margin-bottom: var(--padding-size);
 }
 
 .food {
@@ -166,11 +178,11 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0px;
-/*FONT*/
-      font-family: "Economica", sans-serif;
+    /*FONT*/
+    font-family: "Economica", sans-serif;
     font-size: 56px;
     font-weight: bold;
-    
+
 }
 
 /* END order */
@@ -188,46 +200,59 @@ body {
 
 .sakura-box {
     margin-bottom: var(--padding-size);
-       display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
+}
+
+.special-margin {
+    margin-top: 64px !important;
 }
 
 .box {
     display: flex;
-    padding-top: 56px;
+    margin-top: 56px;
     width: 80vw;
-    align-items: center;
 }
 
-.box-2{
-        display: flex;
-    padding-top: 56px;
+.box-2 {
+    display: flex;
+    margin-top: 56px;
     width: 80vw;
-    align-items: center;
     justify-content: flex-end;
 }
 
-.text{
-    display: flex;
+.text {
     flex-direction: column;
-    
-        margin-left: 80px;
-        margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 56px;
 }
+
+.text-2 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin-right: 168px;
+}
+
+
 
 .menu-img {
     height: 352px;
     width: 352px;
-    margin: 24px;
+}
+
+th {
+    margin-bottom: 8px !important;
+}
+
+tr {
+    margin-bottom: 8px;
 }
 
 /* END menu */
 
 /* GOOGLE MAPS */
-.headline-adress {
-    margin-bottom: 0;
-}
-
 .adress {
     display: flex;
     justify-content: center;
@@ -243,9 +268,9 @@ body {
     height: 30px;
     width: 30px;
     padding-right: 8px;
-} 
+}
 
-inframe{
+iframe {
     border: 0;
     width: 100%;
     height: 450px;
@@ -254,7 +279,7 @@ inframe{
 /* END GOOGLE MAPS */
 
 /* footer */
-.footer {
+footer {
     background-color: var(--footer);
     color: white;
     height: 144px;
