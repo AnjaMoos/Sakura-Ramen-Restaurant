@@ -23,6 +23,7 @@ h2 {
     color: var(--H2-text);
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .tertiary {
@@ -39,9 +40,9 @@ h2 {
     font-size: 32px;
     font-weight: bold;
     color: var(--dish-price-text);
-        display: flex;
-    justify-content: space-between;
-    width: 180%;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
 }
 
 .normal {
@@ -131,8 +132,8 @@ nav {
 
 }
 
-.headline-sekura {
-    margin-top: 120px;
+.headline-sakura {
+    margin-top: 12vh;
     margin-bottom: 0px;
 }
 
@@ -141,6 +142,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 /* END head */
@@ -202,6 +204,8 @@ nav {
     margin-bottom: var(--padding-size);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
 }
 
 .special-margin {
@@ -225,14 +229,14 @@ nav {
     flex-direction: column;
     display: flex;
     justify-content: center;
-    margin-left: 56px;
+    margin-left: 2%;
 }
 
 .text-2 {
     flex-direction: column;
     display: flex;
     justify-content: center;
-    margin-right: 168px;
+    margin-right: 16px;
 }
 
 
@@ -248,6 +252,8 @@ th {
 
 tr {
     margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* END menu */
@@ -257,11 +263,15 @@ tr {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 21px;
+    font-size: 20px;
     margin-top: 8px;
-    margin-bottom: 50px;
-    margin-left: -12px;
+    margin-bottom: 48px;
     font-family: "Raleway", sans-serif;
+}
+
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 .icon {
@@ -285,12 +295,13 @@ footer {
     height: 144px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .footer-sakura {
-    margin-left: -150px;
     height: 44px;
 }
 
@@ -300,8 +311,231 @@ footer {
     padding: 8px;
 }
 
-.footer-div {
-    margin-right: -200px;
+/* END footer */
+
+@media(max-width: 990px) {
+    .tertiary {
+        font-size: 32px;
+    }
+
+    .dish-info {
+        font-size: 24px;
+        width: 300px;
+    }
 }
 
-/* END footer */
+/* Tablet */
+@media(max-width: 800px) {
+    .query {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .headline-sekura {
+        margin-top: 8vh;
+    }
+
+    :root {
+        --padding-size: 96px;
+    }
+
+    .options-box {
+        margin-top: 48px;
+        margin-bottom: var(--padding-size);
+    }
+
+
+    .food-img {
+        margin-bottom: 8px;
+    }
+
+    .sakura-box {
+        width: 97%;
+    }
+
+    .special-margin {
+        margin-top: 48px !important;
+    }
+
+    .box {
+        margin-top: 32px;
+    }
+
+    .box-2 {
+        margin-top: 32px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dish-info {
+        width: 200px;
+    }
+
+    .text {
+        margin-left: 24px;
+    }
+
+    footer {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+@media(max-width: 768px){
+    .normal {
+    font-size: 20px;
+}
+
+.primary {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+.food-text {
+    font-size: 32px;
+}
+}
+
+@media(max-width: 630px) {
+    .box {
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-2 {
+        flex-direction: column-reverse;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+     .sakura-box{
+        align-items: center;
+    }
+
+    .text {
+        margin-left: 0px;
+    }
+
+    .text-2 {
+        margin-right: 0px;
+    }
+
+    .dish-info{
+        width: 80vw;
+    }
+}
+
+@media(max-width: 520px) {
+
+    footer {
+        height: 86px;
+    }
+
+    .footer-sakura {
+        display: none;
+    }
+
+    .flower-2 {
+        height: 40px;
+        width: 40px;
+    }
+
+    .footer-icon {
+        width: 32px;
+        height: 32px;
+        padding: 2px;
+    }
+}
+
+@media(min-width: 520px) {
+    .flower-2 {
+        display: none;
+    }
+}
+
+@media(max-width: 440px) {
+ .tel {
+        padding: 2px;
+    }
+   .normal {
+        font-size: 16px;
+    }
+
+    .primary {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .options-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .food-img {
+        width: 112px;
+        margin-bottom: 32px;
+    }
+
+    .food-text {
+        font-size: 32px;
+    }
+
+    .food-margin {
+        margin-bottom: 32px;
+    }
+
+}
+
+/* Handy */
+
+@media(max-width: 375px) {
+    :root {
+        --padding-size: 72px;
+    }
+
+    nav {
+        height: 64px;
+    }
+
+    .headline-sekura {
+        margin-top: 15vh;
+    }
+
+    .flower {
+        height: 40px;
+        width: 40px;
+    }
+
+    .primary {
+        font-size: 44px;
+    }
+
+    .special-margin {
+        margin-top: 40px !important;
+    }
+
+    .adress {
+        margin-bottom: 40px;
+    }
+
+    .menu-img {
+        display: flex;
+        align-items: center;
+        width: 95vw;
+        height: 95vw;
+    }
+}
